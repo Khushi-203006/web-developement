@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <body>
+        <!--<p id="demo">MY FIRST JAVASCRIPT PROGRAM</p>
+        <script>
+            function myfunction(){
+                document.getElementById("demo").style.fontsize= "20px";
+                document.getElementById("demo").style.color= "red";
+                document.getElementById("demo").style.backgroundColor="yellow";
+            }
+        </script>
+        <button type="button" onclick="myfunction()">ITS ME HERE!!!</button>---->
+
+        <script>
+            function cat(i){
+                var pic;
+                if (i==0){
+                    pic= "images/white_cat.jpg"
+                } else{
+                    pic="images/black_cat.jpg"
+                }
+                document.getElementById("catpic").src=pic;
+            }
+        </script>
+        <img id="catpic" src="images/white_cat.jpg"  alt="white cat" width="800px" height="800px">
+        <P>
+        <button type="button" onclick=" cat(1)">black cat</button>
+        <button type="button" onclick=" cat(0)">white cat</button>
+        </P>
+    </body>
+</html>

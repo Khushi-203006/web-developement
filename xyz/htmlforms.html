@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML FORMS
+        </title>
+        <link rel="icon" href="images/paper_work.jpg" type="image/jpg">
+        <style>
+            h1{
+                background-color: rgb(7, 5, 85);
+                color: rgb(173, 208, 238);
+                font-style: oblique;
+                font-size: 400%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML FORMS</h1>
+        <form>
+            <!-----personal data----->
+            <fieldset>
+                <legend style="font-size: 150%;">Student data</legend>
+                    <table>
+                        <tr>
+                        <!---name of student, father's and mother's name-->
+                            <td><label for="fname" style="font-size: 120%;">Candidate's First name: </label></td>
+                            <td><input type="text" id="fname" name="fname" value="" style="font-size: 120%;"></td>
+                            <td><label for="lname" style="font-size:120%;">Candidate's Last name: </label></td>
+                            <td> <input type="text" id="lname" name="lname" value="" style="font-size: 120%;"><br></td>
+                            <br>
+                        </tr>
+                        <tr>
+                            <td><label for="fathername" style="font-size:120%;">Father's name: </label></td>
+                            <td><input type="text" id="fathername" name="fathername" value="" style="font-size: 120%;"></td>
+                            <td><label for="mothername" style="font-size: 120%;">Mother's name: </label></td>
+                            <td><input type="text" id="mothername" name="mothername" value="" style="font-size: 120%;"><br></td>
+                            <br>
+                        </tr>
+                        <!---name of student, father's and mother's name-->
+                        <!--age of candidate-->
+                        <tr>
+                            <td><label for="age" style="font-size: 120%;">Age: </label></td>
+                            <td><input type="text" id="age" name="age" value="" style="font-size: 120%;"></td>
+                        <!--</tr>-->
+                        <!--age of candidate-->
+                        <!--<tr>-->
+                        <!--Adhaar card number-->
+                            <td><label for="adhaar" style="font-size:120%;">Adhaar Number: </label></td>
+                            <td><input type="text" id="adhaar" name="adhaar" value="" style="font-size:120%;"></td>
+                        <!--Adhaar card number-->
+                        </tr>
+                        <tr>
+                         <!--about gender where I mentioned 3 genders male, female and others-->   
+                        <td><label for="gender" style="font-size: 120%;">Gender: </label></td>
+                        <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="font-size: 120%;">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" style="font-size: 120%;">Female</label>
+                        <input type="radio" id="other" name="gender" value="others">
+                        <label for="others" style="font-size: 120%;">Others</label></td>
+                         <!--Date of birth of Candidate-->
+                        <td><label for="dob" style="font-size: 120%;">Date of birth: </label></td>
+                        <td><input type="date" id="dob" name="date" value="dob" style="font-size: 120%;"></td>
+                        </tr>
+                        <tr>
+                         <!--phone no-->
+                        <td><label for="phone" style="font-size: 120%;">Phone no.: </label></td>
+                        <td><input type="text" id="phone" name="phone" value="" style="font-size: 120%;"></td>
+                        <!--phone no-->
+                        <!--nationality-->
+                        <td><label for="nationality" style="font-size: 120%;">Nationality: </label></td>
+                        <td><input list="nationality" name="nationality"></td>
+                        <td><datalist id="nationality" style="font-size: 120%;">
+                                <option value="Indian">Indian</option>
+                                <option value="NRI">NRI</option><BR>
+                                </datalist></td>
+                        </tr>
+                        <tr>
+                            <!--Blood group-->
+                            <td><label for="blood_group" style="font-size: 120%;">Blood group: </label></td>
+                            <td colspan="1"><select id="blood_group" name="blood_group" style="font-size: 100%;">
+                                <option value=""></option>
+                                <option value="A+">A+</option>
+                                <option value="B+" >B+</option>
+                                <option value="O+" >O+</option>
+                                <option value="O-" >O-</option>
+                            </select>
+                            <!--Catogary-->
+                            <label for="Catogary" style="font-size: 120%;">Catogary: </label>
+                            <select id="Catogary" name="Catogary" style="font-size: 100%;">
+                                <option value=""></option>
+                                <option value="General">General</option>
+                                <option value="OBC">OBC</option>
+                                <option value="ST">ST</option>
+                                <option value="SC">SC</option>
+                            </select>
+                            <!--Catogary-->
+                        </td>
+                        <!--state-->
+                        <td><label for="state" style="font-size: 120%;">State: </label></td>
+                        <td><select id="state" name="state" style="font-size: 120%;" size="1">
+                                <option value=""></option>
+                                <option value="Uttar pradesh">Uttar pradesh</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Himachal pradesh">Himachal pradesh</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Maharastra">Maharastra</option>
+                                <option value="arunachal pradesh">arunachal pradesh</option>
+                                <option value="uttrakhand">uttrakhand</option>
+                                <option value="Bihar">Bihar</option>
+                            </select>
+                        </td>
+                        <!--state-->
+                        </tr>
+                        <tr>
+                            <!--ADDRESS-->
+                            <td><label for="address" style="font-size: 120%;">Address: </label></td>
+                            <td><input id="address" name="address" style="font-size: 120%;"></td>
+                            <!--address-->
+                        </tr>
+                </table>
+           </fieldset>
+                    <br>
+           <fieldset>
+                <legend>Education</legend>
+                <table>
+                    <tr><!--class-->
+                        <td><label for="class" style="font-size: 120%;">Current class: </label></td>
+                        <td>
+                        <select id="class" name="class" style="font-size: 120%;">
+                            <option value=""></option>
+                            <option value="12th">12th</option>
+                            <option value="drop" >1 year drop</option>
+                            <option value="2nd drop" >2nd year drop</option>
+                            <option value="1st year" >1st year</option>
+                        </select>
+                        </td>
+                        <!--school-->
+                        <td><label for="school" style="font-size: 120%;">School name: </label></td>
+                        <td><input id="school" name="school" value="" style="font-size: 120%;"></td>
+                        <!--board-->
+                        <td><label for="board" style="font-size: 120%;">School Board: </label></td>
+                        <td><select id="board" name="board" style="font-size: 120%;">
+                        <option value=""></option>
+                        <option value="CBSE">CBSE</option>
+                        <OPTION VALUE="ICSE">ICSE</OPTION>
+                        <option value="State board">State board</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <!--type of exam he/she gave-->
+                        <td><label for="exam" style="font-size: 120%;">Exam given: </label></td>
+                        <td>
+                            <input type="checkbox" id="Board" name="exam" value="Board">
+                            <label for="Board" style="font-size: 120%;">Board-Exam</label>
+                            <input type="checkbox" id="jee" name="exam" value="jee">
+                            <label for="jee" style="font-size: 120%;">JEE-mains</label>
+                            <input type="checkbox" id="Cuet" name="exam" value="Cuet">
+                            <label for="Cuet" style="font-size: 120%;">Cuet</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--about marks-->
+                        <td><label for="board_marks" style="font-size: 120%;">Board exam marks:</label></td>
+                        <td><input type="text" id="board_marks" name="marks_1" value="" style="font-size: 120%;"></td>
+                        <td><label for="jee_mains_marks" style="font-size: 120%;">Jee mains marks:</label></td>
+                        <td><input type="text" id="jee_mains_marks" name="marks_2" value="" style="font-size: 120%;"></td>
+                        <td><label for="cuet_marks" style="font-size: 120%;">Cuet marks:</label></td>
+                        <td><input type="text" id="cuet_marks" name="marks_3" value="" style="font-size: 120%;"></td>
+                    </tr>
+                </table>                
+           </fieldset>           
+            <table>
+                <tr>
+                    <td>
+                        <!--Textarea for any query-->
+                        <label for="query" style="font-size: 120%;">For any query or question kindly write below: </label>
+                        <textarea name="query" rows="1" cols="10" style="font-size: 120%;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit"  style="font-size: 120%;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

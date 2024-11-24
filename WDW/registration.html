@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+    <title>Registration form></title>
+</head>
+<body bgcolor="beige">
+<center>
+    <font color="Brown" size="6" face="Monospace"><h1>Registration form</h1></font><br>
+    <form id="Registrationform">
+        First Name:-  <font color="Black"></font>
+            <input type="text" placeholder="eg- Stevan" ><br><Br>
+
+        Last name:-  <font color="Black"></font>
+            <input type="text" placeholder="eg- edward"> <br><br>
+
+        Email:-  <font color="black"></font>
+            <input type="text" placeholder="eg- stevan20045@gmail.com"><br><br>
+
+        Gender:-  
+        <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="others"> Others<br><br>
+    
+        Date of birth:-  <font color="Black"></font>
+            <input type="date" placeholder="dd/mm/yyyy"><br><br>
+        
+        Language:-  <font color="Black"></font>
+            <input type="checkbox">hindi
+            <input type="checkbox">english
+            <input type="checkbox">tamil
+            <input type="checkbox">tealgu<br><br>
+        
+        Phone number:-  <font color="Black"></font>
+            <input type="text"><br><br>
+            
+        Address:-  <font color="Black"></font>
+            <input type="text"><br><br>
+            
+        Password:-  <font color="Black"></font>
+            <input type="password" placeholder="set strong password"><br><br>
+        
+            <input type="submit" value="Reset">
+            <input type="submit" value="Submit">
+    </form>
+        </center>
+        <script>
+            const form= document.getElementById("Registrationform");
+            form.addEventListener("submit",(event) =>{
+                event.preventDefault();
+                const password= document.getElementById("Password").value;
+                if(password.lenght<6){
+                    alert("Password should be at least 6 charachters longs.");
+                }
+                else{
+                    alert("Form submitted succesfully");
+                }
+            });
+        </script>
+    </body>
+</html>

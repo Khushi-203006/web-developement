@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body bgcolor="beige">
+    <center>
+        <font color="Brown" size="6" face="Monospace"><h1>Registration Form</h1></font><br>
+        <form id="registrationForm">
+            First Name: 
+            <input type="text" id="firstName" placeholder="e.g., Steven" required><br><br>
+
+            Last Name: 
+            <input type="text" id="lastName" placeholder="e.g., Edward" required><br><br>
+
+            Email: 
+            <input type="email" id="email" placeholder="e.g., steven20045@gmail.com" required><br><br>
+
+            Gender:  
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> Others<br><br>
+
+            Date of Birth: 
+            <input type="date" id="dob" required><br><br>
+        
+            Languages: 
+            <input type="checkbox" id="hindi"> Hindi
+            <input type="checkbox" id="english"> English
+            <input type="checkbox" id="tamil"> Tamil
+            <input type="checkbox" id="telugu"> Telugu<br><br>
+        
+            Phone Number: 
+            <input type="text" id="phone" placeholder="e.g., 9876543210" required><br><br>
+            
+            Address: 
+            <input type="text" id="address" placeholder="e.g., 123 Main St" required><br><br>
+            
+            Password: 
+            <input type="password" id="password" placeholder="Set a strong password" required><br><br>
+        
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            
+            const password = document.getElementById("password").value;
+            if (password.length < 6) {
+                alert("Password should be at least 6 characters long.");
+            } else {
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+</body>
+</html>
